@@ -42,6 +42,11 @@
    ///
    -->
    <view name="system">
+      <image name="system-video-vignette">
+         <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/colorful-simplified-es-de-addon_720p-system-video/images/vignette.svg</path>
+         <zIndex>5</zIndex>
+         <color>${systemBackgroundColor}</color>
+      </image>
       <video name="system-video">
          <imageType>none</imageType>
          <delay>2</delay>
@@ -59,6 +64,11 @@
    -->
    <aspectRatio name="16:9">
       <view name="system">
+         <image name="system-video-vignette">
+            <origin>0.5 0.5</origin>
+            <pos>0.6875 0.459259259259259</pos><!-- 1320 496 -->
+            <size>1 1</size>
+         </image>
          <video name="system-video">
             <origin>0.5 0.5</origin>
             <pos>0.6875 0.459259259259259</pos><!-- 1320 496 -->
