@@ -10,6 +10,16 @@
          <allowSystemVideo>true</allowSystemVideo>
       </variables>
    </colorScheme>
+   <colorScheme name="Colorful-Light">
+      <variables>
+         <allowSystemVideo>true</allowSystemVideo>
+      </variables>
+   </colorScheme>
+   <colorScheme name="Colorful-Dark">
+      <variables>
+         <allowSystemVideo>true</allowSystemVideo>
+      </variables>
+   </colorScheme>
    <colorScheme name="Light">
       <variables>
          <allowSystemVideo>false</allowSystemVideo>
@@ -45,7 +55,7 @@
       <image name="system-video-vignette">
          <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/colorful-simplified-es-de-addon_720p-system-video/images/vignette.svg</path>
          <zIndex>5</zIndex>
-         <color>${systemBackgroundColor}</color>
+         <color>${backgroundColor}</color>
       </image>
       <video name="system-video">
          <imageType>none</imageType>
