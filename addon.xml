@@ -86,14 +86,5 @@
          </video>
       </view>
    </aspectRatio>
-   <aspectRatio name="4:3">
-      <view name="system">
-         <video name="system-video">
-            <origin>0.5 0</origin>
-            <pos>0.5 -0.05</pos><!-- 50% 50% -->
-            <size>0 0.9</size>
-         </video>
-      </view>
-   </aspectRatio>
 
 </theme>
