@@ -5,44 +5,9 @@
    Variables
    ///
    -->
-   <colorScheme name="Colorful">
+   <colorScheme name="Colorful,Colorful-Dark,Colorful-Light,OLED,Dark,Light,RetroBright,DMG">
       <variables>
          <allowSystemVideo>true</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="Colorful-Light">
-      <variables>
-         <allowSystemVideo>true</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="Colorful-Dark">
-      <variables>
-         <allowSystemVideo>true</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="Light">
-      <variables>
-         <allowSystemVideo>false</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="RetroBright">
-      <variables>
-         <allowSystemVideo>false</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="DMG">
-      <variables>
-         <allowSystemVideo>false</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="Dark">
-      <variables>
-         <allowSystemVideo>false</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="OLED">
-      <variables>
-         <allowSystemVideo>false</allowSystemVideo>
       </variables>
    </colorScheme>
 
@@ -54,15 +19,16 @@
    <view name="system">
       <image name="system-video-vignette">
          <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/colorful-simplified-es-de-addon_720p-system-video/images/vignette.svg</path>
-         <zIndex>5</zIndex>
+         <zIndex>3</zIndex>
          <color>${backgroundColor}</color>
+         <visible>${allowSystemVideo}</visible>
       </image>
       <video name="system-video">
          <imageType>none</imageType>
          <delay>2</delay>
          <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/colorful-simplified-es-de-addon_720p-system-video/videos/${system.theme}.mp4</path>
          <fadeInType>transparent</fadeInType>
-         <zIndex>4</zIndex>
+         <zIndex>2</zIndex>
          <visible>${allowSystemVideo}</visible>
       </video>
    </view>
@@ -76,13 +42,27 @@
       <view name="system">
          <image name="system-video-vignette">
             <origin>0.5 0.5</origin>
-            <pos>0.6875 0.459259259259259</pos><!-- 1320 496 -->
-            <size>1 1</size>
+            <pos>0.70052083 0.5</pos><!-- 1345 50% -->
+            <size>0 1</size>
          </image>
          <video name="system-video">
             <origin>0.5 0.5</origin>
-            <pos>0.6875 0.459259259259259</pos><!-- 1320 496 -->
-            <size>1 1</size>
+            <pos>0.70052083 0.5</pos><!-- 1345 50% -->
+            <size>0 1</size>
+         </video>
+      </view>
+   </aspectRatio>
+   <aspectRatio name="16:10">
+      <view name="system">
+         <image name="system-video-vignette">
+            <origin>0.5 0.5</origin>
+            <pos>0.70052083 0.5</pos><!-- 1345 50% -->
+            <size>0 1</size>
+         </image>
+         <video name="system-video">
+            <origin>0.5 0.5</origin>
+            <pos>0.70052083 0.5</pos><!-- 1345 50% -->
+            <size>0 1</size>
          </video>
       </view>
    </aspectRatio>
