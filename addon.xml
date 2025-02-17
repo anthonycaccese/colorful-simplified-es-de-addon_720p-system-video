@@ -5,9 +5,14 @@
    Variables
    ///
    -->
-   <colorScheme name="Colorful,Colorful-Dark,Colorful-Light,OLED,Dark,Light,RetroBright,DMG">
+   <colorScheme name="Colorful,Colorful-Dark,Colorful-Light">
       <variables>
          <allowSystemVideo>true</allowSystemVideo>
+      </variables>
+   </colorScheme>
+   <colorScheme name="OLED,Dark,Light,RetroBright,DMG">
+      <variables>
+         <allowSystemVideo>false</allowSystemVideo>
       </variables>
    </colorScheme>
 
@@ -62,6 +67,20 @@
          <video name="system-video">
             <origin>0.5 0.5</origin>
             <pos>0.70833333 0.5</pos><!-- 1224 50% -->
+            <size>0 1</size>
+         </video>
+      </view>
+   </aspectRatio>
+   <aspectRatio name="1:1">
+      <view name="system">
+         <image name="system-video-vignette">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <size>0 1</size>
+         </image>
+         <video name="system-video">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
             <size>0 1</size>
          </video>
       </view>
