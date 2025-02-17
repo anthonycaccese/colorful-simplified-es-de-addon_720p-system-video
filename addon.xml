@@ -5,7 +5,7 @@
    Variables
    ///
    -->
-   <colorScheme name="Colorful,Colorful-Dark,Colorful-Light,OLED,Dark,Light,RetroBright,DMG">
+   <colorScheme name="Colorful,Colorful-Dark,OLED,Dark,Light,RetroBright,DMG">
       <variables>
          <allowSystemVideo>true</allowSystemVideo>
       </variables>
