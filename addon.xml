@@ -2,22 +2,55 @@
 
    <!--
    ///
+   Color Scheme
+   ///
+   -->
+   <colorScheme name="Add-on">
+      <variables>
+         <!-- Global -->
+         <backgroundColor>${systemColor}</backgroundColor>
+         <helpIconColor>ffffff</helpIconColor>
+         <helpTextColor>ffffffbb</helpTextColor>
+         <helpBackgroundColor>00000000</helpBackgroundColor>
+         <!-- System View -->
+         <systemStatusColor>ffffff</systemStatusColor>
+         <systemStatusBackgroundColor>00000011</systemStatusBackgroundColor>
+         <systemMetadataBackgroundColor>00000000</systemMetadataBackgroundColor>
+         <systemLabelColor>ffffffaa</systemLabelColor>
+         <systemNameBackgroundColor>${systemColor}</systemNameBackgroundColor>
+         <systemNameBackgroundShadeColor>ffffff00</systemNameBackgroundShadeColor>
+         <systemNameColor>ffffff</systemNameColor>
+         <systemDescriptionColor>ffffff</systemDescriptionColor>
+         <systemGameCountColor>ffffffbb</systemGameCountColor>
+         <systemArrowColor>ffffff44</systemArrowColor>
+         <!-- Gamelist View -->
+         <gamelistStatusColor>ffffff</gamelistStatusColor>
+         <gamelistStatusBackgroundColor>00000099</gamelistStatusBackgroundColor>
+         <gamelistTextlistBackgroundColor>${systemColor}</gamelistTextlistBackgroundColor>
+         <gamelistTextlistPrimaryColor>ffffff88</gamelistTextlistPrimaryColor>
+         <gamelistTextlistSecondaryColor>ffffff88</gamelistTextlistSecondaryColor>
+         <gamelistTextlistSelectedColor>ffffff</gamelistTextlistSelectedColor>
+         <gamelistTextlistSelectorColor>00000055</gamelistTextlistSelectorColor>
+         <gameArtBackgroundColor>${systemColor}44</gameArtBackgroundColor>
+         <gameDescriptionBackgroundColor>00000055</gameDescriptionBackgroundColor>
+         <gameDescriptionColor>ffffff</gameDescriptionColor>
+         <gameMetadataBackgroundColor>${systemColor}</gameMetadataBackgroundColor>
+         <gameMetadataBackgroundShadeColor>00000033</gameMetadataBackgroundShadeColor>
+         <gameRatingColor>ffffff</gameRatingColor>
+         <gameMetadataLabelColor>ffffffaa</gameMetadataLabelColor>
+         <gameMetadataColor>ffffff</gameMetadataColor>
+      </variables>
+   </colorScheme>
+
+   <!--
+   ///
    Variables
    ///
    -->
-   <colorScheme name="Colorful,Colorful-Dark,OLED,Dark,Light,RetroBright,DMG">
+   <colorScheme name="Add-on">
       <variables>
          <allowSystemVideo>true</allowSystemVideo>
-      </variables>
-   </colorScheme>
-   <colorScheme name="Colorful">
-      <variables>
          <displayVignette>true</displayVignette>
-      </variables>
-   </colorScheme>
-   <colorScheme name="Colorful-Dark,OLED,Dark,Light,RetroBright,DMG">
-      <variables>
-         <displayVignette>false</displayVignette>
       </variables>
    </colorScheme>
 
@@ -28,7 +61,7 @@
    -->
    <view name="system">
       <image name="system-video-vignette">
-         <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/colorful-simplified-es-de-addon_720p-system-video/images/vignette.svg</path>
+         <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/images/vignette.svg</path>
          <zIndex>3</zIndex>
          <color>${backgroundColor}</color>
          <visible>${displayVignette}</visible>
@@ -36,7 +69,7 @@
       <video name="system-video">
          <imageType>none</imageType>
          <delay>2</delay>
-         <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/colorful-simplified-es-de-addon_720p-system-video/videos/${system.theme}.mp4</path>
+         <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/videos/${system.theme}.mp4</path>
          <fadeInType>transparent</fadeInType>
          <zIndex>2</zIndex>
          <visible>${allowSystemVideo}</visible>
