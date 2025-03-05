@@ -5,13 +5,12 @@
    Color Scheme
    ///
    -->
-   <colorScheme name="Add-on">
+   <colorScheme name="add-on">
       <variables>
          <!-- Global -->
          <backgroundColor>${systemColor}</backgroundColor>
          <helpIconColor>ffffff</helpIconColor>
          <helpTextColor>ffffffbb</helpTextColor>
-         <helpBackgroundColor>00000000</helpBackgroundColor>
          <!-- System View -->
          <systemStatusColor>ffffff</systemStatusColor>
          <systemStatusBackgroundColor>00000011</systemStatusBackgroundColor>
@@ -47,7 +46,7 @@
    Variables
    ///
    -->
-   <colorScheme name="Add-on">
+   <colorScheme name="add-on">
       <variables>
          <allowSystemVideo>true</allowSystemVideo>
          <displayVignette>true</displayVignette>
@@ -61,7 +60,8 @@
    -->
    <view name="system">
       <image name="system-video-vignette">
-         <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/images/vignette.svg</path>
+         <!--<path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/images/vignette.svg</path>-->
+         <path>/storage/emulated/0/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/images/vignette.svg</path>
          <zIndex>3</zIndex>
          <color>${backgroundColor}</color>
          <visible>${displayVignette}</visible>
@@ -69,7 +69,8 @@
       <video name="system-video">
          <imageType>none</imageType>
          <delay>2</delay>
-         <path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/videos/${system.theme}.mp4</path>
+         <!--<path>~/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/videos/${system.theme}.mp4</path>-->
+         <path>/storage/emulated/0/ES-DE/themes/colorful-simplified-es-de/theme-addons/system-video/videos/${system.theme}.mp4</path>
          <fadeInType>transparent</fadeInType>
          <zIndex>2</zIndex>
          <visible>${allowSystemVideo}</visible>
