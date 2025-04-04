@@ -21,6 +21,7 @@ To install:
 1. Download the `system-video-720p.zip` file from the latest release [here](https://github.com/anthonycaccese/colorful-simplified-es-de-addon_720p-system-video/releases/latest)
 2. Unzip it into your existing Colorful Simplified theme directory located at: `ES-DE/themes/colorful-simplified-es-de`.  
     - After unzip you should have a new folder called `/theme-addons/system-video/` and that folder will contain the assets needed for this add-on to function (e.g. addon.xml, videos and images)
+    - On Android, the built-in theme downloader will install the theme at: `/storage/emulated/0/Android/data/org.es_de.frontend/files/themes/colorful-simplified-es-de`. On newer versions of Android, an advanced file manager application (such as ZArchiver) may be required to move the add-on files into this directory. Alternatively, the entire theme's source files along with the add-on could instead manually be placed in: `/storage/emulated/0/ES-DE/themes/colorful-simplified-es-de`.
 3. Then open Menu > UI Settings and set your Theme Color Scheme to: `Add-on (See Readme)`
 
 ## Credits:
